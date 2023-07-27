@@ -105,6 +105,9 @@ a {
     color-scheme: dark;
   }
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "SVNFont";
   src: url("SVN-RosellindaAlyamore.otf") format("opentype");
@@ -124,6 +127,7 @@ a {
 .svn-text {
   font-family: var(--font-svn);
   font-style: normal;
+  color: var(--second-color);
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2px;

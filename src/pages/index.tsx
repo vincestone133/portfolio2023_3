@@ -1,14 +1,17 @@
 import { Inter } from "next/font/google";
-// import { Button } from "rebass";
+import { NavigationMenu } from "../containers/navBar";
 const inter = Inter({ subsets: ["vietnamese"] });
-
 export default function Home() {
   return (
-    <>
-      {/* <Button variant="primary" mr={2}>
-        Primary
-      </Button> */}
-      <h1 className="svn-text">Nguyễn Quang Sơn</h1>
-    </>
+    <section
+      className="bg-white h-screen"
+      style={{
+        backgroundImage: `url(/imgs/bg01.png)`,
+      }}
+    >
+      <NavigationMenu></NavigationMenu>
+
+      <h1 className="svn-text text-3xl py-4">Nguyễn Quang Sơn</h1>
+    </section>
   );
 }
