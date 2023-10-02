@@ -5,6 +5,8 @@ import { NavigationMenu } from "@/containers/navBar";
 import { CircleImg } from "@/components/CircleImg";
 import { NavigationContact } from "@/containers/navContact";
 export default function Home() {
+  const metaImg =
+    "https://s3.ap-southeast-1.amazonaws.com/images.tubudd.com/blog/thumbnail_Theartofstorytelling_jpeg_54a1bacc81.jpg";
   return (
     <>
       <Head>
@@ -13,10 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="The Rock" />
 
-        <meta
-          property="og:image"
-          content="https://s3.ap-southeast-1.amazonaws.com/images.tubudd.com/blog/thumbnail_Theartofstorytelling_jpeg_54a1bacc81.jpg"
-        />
+        <meta property="og:image" content={metaImg} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavigationMenu></NavigationMenu>
