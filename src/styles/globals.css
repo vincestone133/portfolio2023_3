@@ -105,11 +105,22 @@ a {
     color-scheme: dark;
   }
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "SVNFont";
-  src: url("SVN-RosellindaAlyamore.otf") format("opentype");
+  src: url("../fonts/SVN-RosellindaAlyamore.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Mulish-Italic";
+  src: url("../fonts/Mulish-Italic-VariableFont_wght.ttf");
 }
 :root {
   --first-color: #fff;
@@ -119,12 +130,24 @@ a {
   --bluedark-color: #2b3742;
   --warning-color: #b20a0a;
   --font-svn: SVNFont;
+  --font-mulish: Mulish;
+  --font-mulish-italic: Mulish;
 }
-
 .svn-text {
   font-family: var(--font-svn);
   font-style: normal;
   font-weight: 400;
+  font-size: 2.5rem;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.title-text {
+  color: #e8e8e8;
+  font-family: Mulish;
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 1000;
   line-height: normal;
   letter-spacing: 2px;
   text-transform: capitalize;
