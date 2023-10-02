@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["vietnamese"] });
 import { NavigationMenu } from "@/containers/navBar";
@@ -6,6 +7,18 @@ import { NavigationContact } from "@/containers/navContact";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Portfolio 2023</title>
+        <meta name="description" content="Designed by Nguyen Quang Son" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="The Rock" />
+
+        <meta
+          property="og:image"
+          content="https://s3.ap-southeast-1.amazonaws.com/images.tubudd.com/blog/thumbnail_Theartofstorytelling_jpeg_54a1bacc81.jpg"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavigationMenu></NavigationMenu>
       <section
         className="h-screen w-screen flex items-center"
